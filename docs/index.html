@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Guides</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <!-- <nav>
+    <a href="#/">EN</a>
+    <a href="#/webdev/">简体中文</a>
+    <a href="#/softwareengineering/">简体中文</a>
+  </nav> -->
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      logo: '/_media/icon.svg',
+      name: 'Tech Guides',
+      repo: 'domgoaimly/Tech-Guides',
+      loadSidebar: true,
+      loadNavbar: true,
+      coverpage: true,
+      auto2top: true,
+      loadSidebar: true,
+      autoHeader: true,
+      nativeEmoji: true,
+      mergeNavbar: true,
+      notFoundPage: 'my404.md',
+      coverpage: ['/', '/softwareengineering/', '/webdev/'],
+      themeColor: '#3F51B5',
+      topMargin: 90,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/changelog':
+          'https://raw.githubusercontent.com/domgoaimly/Tech-Guides/main/CHANGELOG.md',
+      },
+      nameLink: {
+        '/softwareengineering/': '#/softwareengineering/',
+        '/webdev/': '#/webdev/',
+        '/': '#/',
+      },
+      requestHeaders: {
+        'cache-control': 'max-age=8600',
+      },
+      copyCode: {
+        buttonText: 'Copy to clipboard',
+        errorText: 'Error',
+        successText: 'Copied'
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- jsfiddle integration -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- docsify-copy-code -->
+  <script src="https://unpkg.com/docsify-copy-code@2"></script>
+</body>
+</html>
